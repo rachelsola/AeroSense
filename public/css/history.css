@@ -1,0 +1,378 @@
+*,
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+header.navbar-container {
+    width: 100%;
+    height: 10%;
+    padding-block: 1rem;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 9999;
+    background-color: #1c2d3c;
+}
+
+header.navbar-container .logo img {
+    width: 150px;
+}
+
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+    background-color: #567494;
+    color: white;
+}
+
+.main {
+    display: grid;
+}
+.card {
+    padding: 1.5rem;
+    margin: auto;
+}
+section {
+    display: flex;
+}
+.aqiData {
+    width: 1825px;
+    height: 700px;
+    background-color: rgba(183, 238, 255, 0.2);
+    padding: 1rem 20rem;
+    padding-bottom: 6rem;
+    border-radius: 1rem;
+    gap: 2rem;
+}
+.aqiData h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.historyData {
+    background-color: rgba(183, 238, 255, 0.2);
+    border-radius: 1rem;
+    padding: 5rem;
+    width: 800px;
+    height: 800px;
+    margin-top: -3rem;
+}
+.historyData h1 {
+    text-align: center;
+    margin-top: -2rem;
+    font-size: 1.8rem;
+}
+.historyCo {
+    background-color: rgba(183, 238, 255, 0.2);
+    border-radius: 1rem;
+    width: 800px;
+    height: 800px;
+    margin-top: -3rem;
+    padding: 5rem;
+}
+.historyCo h1 {
+    text-align: center;
+    margin-top: -2rem;
+    margin-bottom: 10rem;
+    font-size: 1.8rem;
+}
+.time {
+    padding: 1rem; /* Menambahkan ruang di dalam container */
+    background-color: rgba(183, 238, 255, 0.2); /* Warna latar opsional */
+    border-radius: 1rem; /* Membuat sudut membulat */
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: -2rem;
+}
+
+.time h2 {
+    margin: 0 0 1rem 0; /* Jarak bawah untuk memberi ruang ke elemen berikutnya */
+    font-size: 1.8rem; /* Ukuran font judul */
+    color: #000000; /* Warna teks */
+    text-align: center; /* Opsional: posisikan di tengah */
+}
+
+.time .content {
+    display: flex; /* Mengatur tata letak horizontal untuk elemen di dalamnya */
+    justify-content: space-between; /* Memisahkan elemen kiri dan kanan */
+    align-items: center; /* Menyelaraskan elemen secara vertikal */
+    gap: 1rem;
+}
+.time p {
+    margin: 0; /* Menghapus margin default */
+    font-size: 1.3rem; /* Ukuran font */
+    color: #333; /* Warna teks */
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+
+footer {
+    margin-top: 2.3rem;
+    text-align: center; /* Pusatkan gambar secara horizontal */
+    background-color: #1c2d3c; /* Atur warna latar belakang */
+}
+
+footer img {
+    max-width: 200px; /* Batasi lebar gambar */
+    max-height: 100px; /* Batasi tinggi gambar */
+}
+
+@media (max-width: 900px) {
+    .aqiData {
+        width: 860px;
+        height: 500px;
+        margin-left: -1rem;
+        padding: 1rem 6rem;
+    }
+    .historyData {
+        width: 400px;
+        height: 500px;
+        padding: 2rem;
+    }
+    .historyData h1 {
+        margin-top: 0.5rem;
+    }
+    .historyCo {
+        width: 400px;
+        height: 500px;
+        padding: 2rem;
+        margin-left: -1.8rem;
+    }
+    .historyCo h1 {
+        margin-top: 0.5rem;
+    }
+    /* Mengatur .time untuk menjaga tata letak fleksibel */
+    .time {
+        padding: 1rem;
+        margin-top: -1rem;
+        margin-left: 1.2rem;
+        width: 860px;
+    }
+    .time .content {
+        flex-direction: column; /* Membuat elemen-elemen di dalamnya bersusun secara vertikal */
+        justify-content: flex-start; /* Menjaga elemen di awal */
+        gap: 1.5rem; /* Menambahkan jarak antar elemen */
+    }
+    .time p {
+        margin: 0;
+        font-size: 1.3rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    footer {
+        margin-top: 1.3rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .aqiData {
+        width: 700px;
+        height: 450px;
+        margin-left: -1rem;
+        padding: 1rem 3rem;
+    }
+    .historyData {
+        width: 325px;
+        height: 470px;
+        padding: 1rem;
+        margin-left: 0.2rem;
+    }
+    .historyData h1 {
+        margin-top: 0.5rem;
+    }
+    .historyCo {
+        width: 325px;
+        height: 470px;
+        padding: 0rem;
+        margin-left: -2rem;
+    }
+    .historyCo h1 {
+        padding: 1rem;
+        margin-bottom: 5rem;
+    }
+    /* Mengatur .time untuk menjaga tata letak fleksibel */
+    .time {
+        padding: 1rem;
+        margin-top: -1rem;
+        margin-left: 1.2rem;
+        width: 710px;
+    }
+    .time .content {
+        flex-direction: column; /* Membuat elemen-elemen di dalamnya bersusun secara vertikal */
+        justify-content: flex-start; /* Menjaga elemen di awal */
+        gap: 1.5rem; /* Menambahkan jarak antar elemen */
+    }
+    .time p {
+        margin: 0;
+        font-size: 1.3rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    footer {
+        margin-top: 1.3rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .nav-list {
+        display: none;
+        width: 100%; /* Membuat navbar penuh lebar */
+        background-color: #1c2d3c; /* Warna latar belakang navbar */
+        position: absolute; /* Posisi absolut untuk meletakkan navbar di bawah */
+        top: 80px; /* Menempatkan navbar sedikit di bawah header */
+        bottom: 1050px;
+        left: 0; /* Menjaga navbar tetap sejajar dengan sisi kiri */
+        flex-direction: column; /* Mengatur navbar menjadi vertikal */
+        align-items: center; /* Menyusun item navbar di tengah */
+        gap: 1rem; /* Jarak antar item navbar */
+    }
+
+    /* Navbar ditampilkan ketika toggle aktif */
+    .nav-list.active {
+        display: block; /* Menggunakan block agar navbar tampil */
+    }
+
+    /* Tombol menu toggle terlihat pada layar kecil */
+    .menu-toggle {
+        display: flex; /* Menampilkan tombol menu toggle */
+        flex-direction: column; /* Membuat bar toggle dalam bentuk vertikal */
+        cursor: pointer;
+    }
+
+    /* Desain bar pada toggle button */
+    .menu-toggle .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 4px auto;
+        background-color: #fff; /* Mengubah warna bar menjadi putih */
+    }
+
+    /* Menu navbar menjadi vertikal dan tampil di bawah header */
+    .nav-list ul {
+        padding-left: 0;
+        list-style-type: none; /* Menghilangkan bullet */
+        margin: 0;
+        display: flex; /* Mengatur navbar item dalam flexbox */
+        flex-direction: column; /* Menata item navbar secara vertikal */
+        align-items: center; /* Menjaga item navbar agar terpusat */
+    }
+
+    .nav-list li {
+        width: auto; /* Menyesuaikan lebar item navbar */
+        text-align: center; /* Teks navbar rata tengah */
+        padding: 10px 15px; /* Memberikan padding untuk item navbar */
+        width: 100%; /* Lebar item navbar full */
+    }
+
+    .nav-list li a {
+        color: #fff; /* Mengubah warna teks menjadi putih */
+        font-size: 1.2rem; /* Ukuran font yang lebih besar */
+        text-decoration: none; /* Menghilangkan garis bawah */
+        display: block; /* Membuat link menjadi blok untuk meningkatkan area klik */
+    }
+
+    .nav-list li a:hover {
+        background-color: #567494; /* Memberikan warna latar belakang saat hover */
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column; /* Menyusun konten secara vertikal */
+        width: 100%;
+        align-items: center;
+        padding: 0%;
+    }
+
+    section{
+        flex-direction: column;
+    }
+    .card{
+        padding: 0; 
+    }
+    .aqiData {
+        max-width: 420px;
+        height: 340px;
+        margin-bottom: 1rem;
+        margin-left: 1px;
+        margin-top: 2rem;
+        padding: 2rem 1rem;
+    }
+    .aqiData h1{
+        margin-top: 0.5rem;
+        font-size: 1.7rem;
+    }
+    .historyData {
+        max-width: 420px;
+        order: 1; /* Pastikan historyData tampil di atas */
+        margin-top: 1rem;
+        width: 420px;
+        height: 500px;
+        padding: 2rem 2rem 6rem;
+    }
+    .historyData h1{
+        margin-top: -0.2rem;
+        font-size: 1.7rem;
+    }
+    .historyCo {
+        height: 500px;
+        order: 2; /* Pastikan historyCo tampil di bawah */
+        margin-top: 2rem;
+        width: 420px;
+        margin-left: 0.6rem;
+        padding: 2rem 2rem 6rem;
+    }
+    .historyCo h1{
+        margin-top: -1.5rem;
+        font-size: 1.7rem;
+        margin-bottom: 5rem;
+    }
+    .time {
+        width: 420px;
+        margin-top: 2rem;
+        margin-left: 2rem;
+        padding: 1rem;
+    }
+    .time .content {
+        flex-direction: column; /* Mengatur konten .time secara vertikal */
+        gap: 1rem;
+    }
+    .time h2{
+        font-size: 1.7rem;
+    }
+    .time p {
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    footer {
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,72 @@
+body {
+    background-image: url('../assets/editadmin.png');
+    background-size: cover;
+    font-family: 'Quicksand', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    color: #003465;
+}
+input{
+    font-size: 1rem;
+}
+label {
+    margin-top: 1.2rem;
+}
+button{
+    background-color: #003366; /* Warna tombol */
+    color: white;
+    padding: 0.75rem;
+    width: 300%;
+    max-width: 300px;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: -1.4rem;
+    margin-top: 1rem;
+}
+
+.button:hover {
+    background-color: #002244; /* Warna tombol saat hover */
+}
+
+.editData{
+    background-color: rgba(255, 255, 255, 0.4); /* Warna biru gelap dengan transparansi */
+    display: grid;
+    text-align: center;
+    padding: 2rem;
+    width: 100%; /* Sesuaikan lebar */
+    height: auto;
+    border-radius: 15px; /* Sudut melengkung */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); /* Efek shadow */
+}
+
+@media (max-width: 900px)
+{
+    .editData{
+        margin-left: -3rem;
+    }
+}
+
+@media (max-width: 750px)
+{
+    .editData{
+        margin-left: -3rem;
+    }
+}
+
+@media (max-width: 450px)
+{
+    .editData{
+        margin-left: -2rem;
+    }
+}

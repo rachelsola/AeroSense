@@ -1,0 +1,863 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header.navbar-container {
+    width: 100%;
+    height: 10%;
+    padding-block: 1rem;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 9999;
+    background-color: #1c2d3c;
+}
+
+header.navbar-container .logo img {
+    width: 150px;
+}
+
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+    background-color: #567494;
+    color: white;
+}
+
+.information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+main {
+    padding: 1.5rem;
+}
+
+.info_one {
+    background-color: #eaf2f9;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+    border-radius: 2.3rem;
+    grid-column: 1 / span 2;
+    margin: 2rem;
+}
+
+.info_two {
+    background-color: #eaf2f9;
+    padding: 3rem;
+    text-align: justify;
+    border-radius: 2.3rem;
+    grid-column: 1 / 2;
+    grid-row: 2 / span 4;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    line-height: 4rem;
+}
+
+.info_two img {
+    width: 70%;
+}
+
+.info_two h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.info_three {
+    background-color: #eaf2f9;
+    padding: 2rem;
+    text-align: justify;
+    border-radius: 2.3rem;
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+.info_one h1,
+.info_two h1,
+.info_three h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    line-height: 3rem;
+}
+
+.info_one p,
+.info_two p,
+.info_three p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.info_two h1,
+.info_two {
+    text-align: center;
+}
+
+.news_one,
+.news_two,
+.news_three,
+.news_four,
+.news_five {
+    background-color: #53cb8f66;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 2.3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.news_one {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    padding: 1.5rem;
+}
+
+.header_one {
+    margin-top: 1rem;
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 0rem;
+}
+
+.header_one img {
+    width: auto;
+    height: 5rem;
+    margin-right: 1rem;
+}
+
+.headerone_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 0rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.news_one h1 {
+    font-size: 2rem;
+}
+.news_one a {
+    text-decoration: none;
+    color: #254014;
+}
+
+.news_one p {
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
+}
+
+.news_two {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    padding: 1.5rem;
+}
+
+.header_two {
+    margin-top: 1rem;
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 0rem;
+}
+
+.header_two img {
+    width: auto;
+    height: 5rem;
+    margin-right: 1rem;
+}
+
+.headertwo_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 0rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.news_two h1 {
+    font-size: 2rem;
+}
+.news_two a {
+    text-decoration: none;
+    color: #254014;
+}
+
+.news_two p {
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
+}
+
+.news_three {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    padding: 1.5rem;
+}
+
+.header_three {
+    margin-top: 1rem;
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 0rem;
+}
+
+.header_three img {
+    width: auto;
+    height: 5rem;
+    margin-right: 1rem;
+}
+
+.headerthree_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 0rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.news_three h1 {
+    font-size: 2rem;
+}
+.news_three a {
+    text-decoration: none;
+    color: #254014;
+}
+
+.news_three p {
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
+}
+
+.news_four {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+}
+
+.header_four {
+    margin-top: 1rem;
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 0rem;
+}
+
+.header_four img {
+    width: auto;
+    height: 5rem;
+    margin-right: 1rem;
+}
+
+.headerfour_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 0rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.news_four h1 {
+    font-size: 2rem;
+}
+.news_four a {
+    text-decoration: none;
+    color: #254014;
+}
+
+.news_four p {
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
+}
+
+.news_five {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+    margin-bottom: 2rem;
+}
+
+.header_five {
+    margin-top: 1rem;
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 0rem;
+}
+.headerfive_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 0rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.headerfive_text p {
+    margin-top: 0rem;
+}
+
+.header_five img {
+    width: auto;
+    height: 5rem;
+    margin-right: 1rem;
+}
+
+.headerthree_five {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 0rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.news_five h1 {
+    font-size: 2rem;
+}
+.news_five a {
+    text-decoration: none;
+    color: #254014;
+}
+
+.news_five p {
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
+    line-height: 2.5rem;
+}
+
+footer {
+    margin-top: 1rem;
+    text-align: center; /* Pusatkan gambar secara horizontal */
+    background-color: #1c2d3c; /* Atur warna latar belakang */
+}
+
+footer img {
+    width: 200px; /* Batasi lebar gambar */
+    height: 100px; /* Batasi tinggi gambar */
+}
+
+@media (max-width: 900px) {
+    .info_one {
+        margin: 0;
+        width: 850px;
+        height: 450px;
+    }
+
+    .info_one h1 {
+        font-size: 2.3rem;
+        margin-top: 0.5rem;
+    }
+    .info_one p {
+        font-size: 1.5rem;
+        line-height: 1.9rem;
+    }
+    .info_two {
+        margin-left: 0;
+        margin-right: 0;
+        width: 410px;
+    }
+    .info_two img {
+        width: 100%;
+    }
+    .info_two h1 {
+        font-size: 2.3rem;
+        margin-top: 1rem;
+        line-height: 2.8rem;
+    }
+    .info_two h2 {
+        font-size: 1.8rem;
+        margin-top: 1rem;
+        line-height: 2.2rem;
+    }
+    .info_two p {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+    .news_one {
+        margin-left: 1rem;
+        margin-right: 0;
+        width: 410px;
+    }
+    .news_one h1 {
+        font-size: 1.6rem;
+    }
+    .news_one p {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        margin-top: 1rem;
+    }
+    .header_one p {
+        font-size: 1.4rem;
+        line-height: 1rem;
+        margin-top: 1rem;
+    }
+    .news_two {
+        margin-left: 1rem;
+        margin-right: 0;
+        width: 410px;
+    }
+    .news_two h1 {
+        font-size: 1.6rem;
+    }
+    .news_two p {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        margin-top: 1rem;
+    }
+    .header_two p {
+        font-size: 1.4rem;
+        line-height: 1rem;
+        margin-top: 1rem;
+    }
+    .news_three {
+        margin-left: 1rem;
+        margin-right: 0;
+        width: 410px;
+    }
+    .news_three h1 {
+        font-size: 1.6rem;
+    }
+    .news_three p {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        margin-top: 1rem;
+    }
+    .header_three p {
+        font-size: 1.4rem;
+        line-height: 1rem;
+        margin-top: 1rem;
+    }
+    .news_four {
+        margin-left: 1rem;
+        margin-right: 0;
+        width: 410px;
+    }
+    .news_four h1 {
+        font-size: 1.6rem;
+    }
+    .news_four p {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        margin-top: 1rem;
+    }
+    .header_four p {
+        font-size: 1.1rem;
+        line-height: 1rem;
+        margin-top: 1rem;
+    }
+    .news_five {
+        margin-left: 0;
+        margin-right: 0;
+        width: 410px;
+    }
+    .news_five h1 {
+        font-size: 1.6rem;
+    }
+    .news_five p {
+        font-size: 1.5rem;
+        line-height: 1.9 rem;
+        margin-top: 1rem;
+    }
+    .header_five p {
+        font-size: 1.1rem;
+        line-height: 1rem;
+        margin-top: 1rem;
+    }
+    .info_three {
+        margin-left: 1rem;
+        margin-right: 0;
+        width: 410px;
+    }
+    .info_three h1 {
+        font-size: 2.3rem;
+        margin-top: 1rem;
+        line-height: 2.8rem;
+    }
+    .info_three p {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .info_one {
+        margin: 0;
+        width: 710px;
+        height: 450px;
+    }
+
+    .info_one h1 {
+        font-size: 2rem;
+        margin-top: 0.5rem;
+    }
+    .info_one p {
+        font-size: 1.3rem;
+        line-height: 1.9rem;
+    }
+    .info_two {
+        margin-left: 0;
+        margin-right: 0;
+        width: 340px;
+    }
+    .info_two img {
+        width: 100%;
+    }
+    .info_two h1 {
+        font-size: 2rem;
+        margin-top: 0.1rem;
+        line-height: 2.3rem;
+    }
+    .info_two h2 {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        line-height: 2rem;
+    }
+    .info_two p {
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+    }
+    .news_one {
+        margin-left: 0rem;
+        margin-right: 0;
+        width: 340px;
+    }
+    .news_one h1 {
+        font-size: 1.5rem;
+    }
+    .news_one p {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        margin-top: 1rem;
+    }
+    .header_one p {
+        font-size: 1rem;
+        line-height: 0.5rem;
+        margin-top: 1rem;
+    }
+    .header_one img {
+        width: 20%;
+        height: 10%;
+    }
+    .news_two {
+        margin-left: 0rem;
+        margin-right: 0;
+        width: 340px;
+    }
+    .news_two h1 {
+        font-size: 1.5rem;
+    }
+    .news_two p {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        margin-top: 1rem;
+    }
+    .header_two p {
+        font-size: 1rem;
+        line-height: 0.5rem;
+        margin-top: 1rem;
+    }
+    .header_two img {
+        width: 20%;
+        height: 10%;
+    }
+    .news_three {
+        margin-left: 0rem;
+        margin-right: 0;
+        width: 340px;
+    }
+    .news_three h1 {
+        font-size: 1.5rem;
+    }
+    .news_three p {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        margin-top: 1rem;
+    }
+    .header_three p {
+        font-size: 1rem;
+        line-height: 0.5rem;
+        margin-top: 1rem;
+    }
+    .header_three img {
+        width: 20%;
+        height: 10%;
+    }
+    .news_four {
+        margin-left: 0rem;
+        margin-right: 0;
+        width: 340px;
+    }
+    .news_four h1 {
+        font-size: 1.5rem;
+    }
+    .news_four p {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        margin-top: 1rem;
+    }
+    .header_four p {
+        font-size: 1rem;
+        line-height: 0.5rem;
+        margin-top: 1rem;
+    }
+    .header_four img {
+        width: 20%;
+        height: 10%;
+    }
+    .news_five {
+        margin-left: 0;
+        margin-right: 0;
+        width: 340px;
+    }
+    .news_five h1 {
+        font-size: 1.6rem;
+    }
+    .news_five p {
+        font-size: 1.5rem;
+        line-height: 1.9 rem;
+        margin-top: 1rem;
+    }
+    .header_five p {
+        font-size: 1.1rem;
+        line-height: 1rem;
+        margin-top: 1rem;
+    }
+    .info_three {
+        margin-left: 1rem;
+        margin-right: 0;
+        width: 340px;
+    }
+    .info_three h1 {
+        font-size: 2rem;
+        margin-top: 0.1rem;
+        line-height: 2.3rem;
+    }
+    .info_three p {
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+    }
+}
+@media (max-width: 450px) {
+    .nav-list {
+        display: none;
+        width: 100%; /* Membuat navbar penuh lebar */
+        background-color: #1c2d3c; /* Warna latar belakang navbar */
+        position: absolute; /* Posisi absolut untuk meletakkan navbar di bawah */
+        top: 80px; /* Menempatkan navbar sedikit di bawah header */
+        bottom: 1050px;
+        left: 0; /* Menjaga navbar tetap sejajar dengan sisi kiri */
+        flex-direction: column; /* Mengatur navbar menjadi vertikal */
+        align-items: center; /* Menyusun item navbar di tengah */
+        gap: 1rem; /* Jarak antar item navbar */
+    }
+
+    /* Navbar ditampilkan ketika toggle aktif */
+    .nav-list.active {
+        display: block; /* Menggunakan block agar navbar tampil */
+    }
+
+    /* Tombol menu toggle terlihat pada layar kecil */
+    .menu-toggle {
+        display: flex; /* Menampilkan tombol menu toggle */
+        flex-direction: column; /* Membuat bar toggle dalam bentuk vertikal */
+        cursor: pointer;
+    }
+
+    /* Desain bar pada toggle button */
+    .menu-toggle .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 4px auto;
+        background-color: #fff; /* Mengubah warna bar menjadi putih */
+    }
+
+    /* Menu navbar menjadi vertikal dan tampil di bawah header */
+    .nav-list ul {
+        padding-left: 0;
+        list-style-type: none; /* Menghilangkan bullet */
+        margin: 0;
+        display: flex; /* Mengatur navbar item dalam flexbox */
+        flex-direction: column; /* Menata item navbar secara vertikal */
+        align-items: center; /* Menjaga item navbar agar terpusat */
+    }
+
+    .nav-list li {
+        width: auto; /* Menyesuaikan lebar item navbar */
+        text-align: center; /* Teks navbar rata tengah */
+        padding: 10px 15px; /* Memberikan padding untuk item navbar */
+        width: 100%; /* Lebar item navbar full */
+    }
+
+    .nav-list li a {
+        color: #fff; /* Mengubah warna teks menjadi putih */
+        font-size: 1.2rem; /* Ukuran font yang lebih besar */
+        text-decoration: none; /* Menghilangkan garis bawah */
+        display: block; /* Membuat link menjadi blok untuk meningkatkan area klik */
+    }
+
+    .nav-list li a:hover {
+        background-color: #567494; /* Memberikan warna latar belakang saat hover */
+    }
+    .information {
+        display: flex;
+        flex-direction: column;
+    }
+    .info_one {
+        margin: 0;
+        width: 405px;
+        height: 600px;
+    }
+
+    .info_one h1 {
+        font-size: 1.8rem;
+        margin-top: 0.5rem;
+        text-align: center;
+        line-height: 1.8rem;
+    }
+    .info_one p {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        text-align: center;
+    }
+    .info_two {
+        margin: 0;
+        width: 405px;
+        height: 1220px;
+    }
+    .info_two h1 {
+        font-size: 1.8rem;
+        margin-top: 0.5rem;
+        text-align: center;
+        line-height: 2rem;
+    }
+    .info_two h2{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-top: 0;
+    }
+    .info_two p{
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        text-align: center;
+        margin-top: 0;
+    }
+    .news_one{
+        margin: 0;
+        width: 405px;
+        height: 360px;
+    }
+    .news_one h1{
+        font-size: 1.4rem;
+    }
+    .news_one p{
+        font-size: 1.3rem;
+    }
+    .news_two{
+        margin: 0;
+        width: 405px;
+        height: 360px;
+    }
+    .news_two h1{
+        font-size: 1.4rem;
+    }
+    .news_two p{
+        font-size: 1.3rem;
+    }
+    .news_three{
+        margin: 0;
+        width: 405px;
+        height: 360px;
+    }
+    .news_three h1{
+        font-size: 1.4rem;
+    }
+    .news_three p{
+        font-size: 1.3rem;
+    }
+    .news_four{
+        margin: 0;
+        width: 405px;
+        height: 360px;
+    }
+    .news_four h1{
+        font-size: 1.4rem;
+    }
+    .news_four p{
+        font-size: 1.3rem;
+    }
+    .header_four p{
+        font-size: 1.2rem;
+    }
+    .news_five{
+        margin: 0;
+        width: 405px;
+        height: 630px;
+    }
+    .news_five h1{
+        font-size: 1.4rem;
+    }
+    .news_five p{
+        font-size: 1.3rem;
+    }
+    .info_three{
+        margin: 0;
+        width: 405px;
+        height: 490px;
+    }
+    .info_three h1 {
+        font-size: 1.8rem;
+        margin-top: 0.5rem;
+        text-align: center;
+        line-height: 2rem;
+    }
+    .info_three p{
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        text-align: center;
+        margin-top: 0;
+    }
+}

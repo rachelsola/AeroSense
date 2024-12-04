@@ -1,0 +1,154 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../assets/background.png');
+    background-size: cover;
+    font-family: 'Quicksand', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(184, 223, 255, 0.5); /* Warna biru gelap dengan transparansi */
+    display: grid;
+    text-align: center;
+    padding: 2rem;
+    width: 30%; /* Sesuaikan lebar */
+    height: auto;
+    border-radius: 15px; /* Sudut melengkung */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); /* Efek shadow */
+    color: white;
+}
+
+.container h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.container p {
+    font-size: 20px;
+    margin-bottom: 2rem;
+    color: #f4f2f2;
+    line-height: 2rem;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.form-control {
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 300px; /* Membatasi lebar input */
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300%;
+    margin-left: -3rem;
+    margin-bottom: -1rem;
+}
+
+.input-group label {
+    font-size: 1rem;
+    color: #f4f2f2;
+    margin-bottom: 0.5rem; /* Menambah jarak antara label dan input */
+    text-align: center;
+    margin-left: 8rem;
+}
+
+.btn-primary {
+    background-color: #003366; /* Warna tombol */
+    color: white;
+    padding: 0.75rem;
+    width: 300%;
+    max-width: 300px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: -1.4rem;
+    margin-top: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: #002244; /* Warna tombol saat hover */
+}
+
+.text-danger {
+    color: #ff4d4d;
+    font-size: 20px;
+}
+
+@media (max-width: 900px) {
+    body {
+        background-size: contain; /* Mengatur ukuran gambar agar menyesuaikan dengan layar */
+        background-position: center; /* Memastikan gambar latar tetap terpusat */
+    }
+    .container{
+        margin-left: 0rem;
+        width: 500px;
+    }
+    .container h2{
+        margin-top: 0rem;
+    }
+    .container p{
+        margin-top: 0rem;
+        margin-bottom: 1.5rem;
+    }
+}
+@media (max-width: 750px) {
+    body {
+        background-size: contain; /* Mengatur ukuran gambar agar menyesuaikan dengan layar */
+        background-position: center; /* Memastikan gambar latar tetap terpusat */
+    }
+    .container{
+        margin-left: 0;
+        width: 500px;
+    }
+    .container h2{
+        margin-top: 0rem;
+    }
+    .container p{
+        margin-top: 0rem;
+        margin-bottom: 1.5rem;
+    }
+}
+@media (max-width: 450px) {
+    body {
+        background-size: contain; /* Mengatur ukuran gambar agar menyesuaikan dengan layar */
+        background-position: center; /* Memastikan gambar latar tetap terpusat */
+    }
+    .container{
+        margin-left: 0rem;
+        margin-right: -13rem;
+        width: 400px;
+    }
+    .container h2{
+        margin-top: 0rem;
+    }
+    .container p{
+        margin-top: 0rem;
+        margin-bottom: 1.5rem;
+    }
+}
